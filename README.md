@@ -10,6 +10,12 @@
 ---
 
 ## 📈 Project 1 — GA4 Foot-Traffic Forecast MVP
+A small experiment built in 2024 to see if store-visit data can predict sales (“alpha” = trading signal).
+I merged Google Analytics 4 visit counts (people near each store) with that store’s point-of-sale revenue for the same weeks. 
+I used PySpark to engineer and store model features (e.g., 7-day lag, rolling averages) in a scalable way. 
+I trained Random-Forest model, the machine-learning algorithm you trained to predict next week’s sales. 
+The model’s average error was 8 % lower than a very simple benchmark (e.g., “next week = this week”). 
+In other words, it’s meaningfully more accurate. The predictions identified stores whose sales were likely to significantly beat or miss expectations; statistical test shows only a 3 % chance the signal is random (good).
 
 | Step | Tech | Outcome |
 |------|------|---------|
